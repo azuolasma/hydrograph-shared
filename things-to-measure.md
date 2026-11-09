@@ -1,31 +1,3 @@
-# Things to measure: ten findings and the channels that power them
-
-`biomarkers.md` establishes *which* biomarkers exist and why. This file is the layer above it: the
-**conditions the app detects**, the **published criteria it detects them with**, and the reduced
-channel list that falls out. `weaknesses.md` §3 says no biomarkers are decided — this is the
-decision, and the thing that decides it is the finding list, not the sensor list.
-
-Working principle, extending `searching-for-correlations.md`: **a channel earns its place only if a
-finding consumes it.** 33 channels with no finding list means nothing constrains the set. Ten
-findings constrain it to ~22.
-
----
-
-## 0. How to read the citations
-
-Every rule below carries a source key resolving to §9. Because `searching-for-correlations.md` is
-right that LLMs invent PMIDs and thresholds, this file uses a deliberate convention:
-
-- **No PMIDs or DOIs unless highly confident.** Author/title/journal/year/volume:pages is
-  checkable without risking a fabricated identifier.
-- **⚠ marks a specific number or claim I could not verify to the digit.** The reference is real;
-  the exact threshold needs eyes on the source before it goes in the rule engine.
-- **Everything unmarked is a standard clinical cut-point** restated from a named guideline.
-
-Nothing here is in the engine until someone opens the source. §8 is the verification queue.
-
----
-
 ## 1. The selection test
 
 A condition is in scope only if it passes all four:
